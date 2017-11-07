@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Generation Tests</title>
+  <meta charset="utf-8">
+  <!-- CSS Reset -->
+  <link rel="stylesheet" href="https://cdn.rawgit.com/necolas/normalize.css/master/normalize.css">
+
+  <!-- Milligram CSS minified -->
+  <link rel="stylesheet" href="https://cdn.rawgit.com/milligram/milligram/master/dist/milligram.min.css">
+
+  <!-- You should properly set the path from the main file. -->
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <header>
+    <h1>Select difficulty level</h1>
+  </header>
+  <main>
+    <div class="container">
+
+        <div class="row">
+          <div class="column difficulty"><input type="radio" class="selectedDifficulty" name="selectedDifficulty" id="easy" value="easy"><label for="easy">Easy</label></div>
+          <div class="column difficulty"><input type="radio" class="selectedDifficulty" name="selectedDifficulty" id="medium" value="medium" checked><label for="medium">Medium</label></div>
+          <div class="column difficulty"><input type="radio" class="selectedDifficulty" name="selectedDifficulty" id="hard" value="hard"><label for="hard">Hard</label></div>
+        </div>
+        <div class="row">
+          <div class="column"></div>
+          <div class="column button1">
+<!--            <button onclick="generation()">Generation</button>-->
+            <button id="generate">Generation</button>
+          </div>
+          <div class="column"></div>
+        </div>
+      
+      <div id="generNumber"></div>
+      
+      <div class="row">
+        <div class="column"></div>
+        <div class="column">
+          <div>
+            <input style="width:60%" type="text" id="userNumber" name="userNumber" placeholder="Number">
+            <button style="width:38%" id="submitResult">Ok</button>
+          </div>
+        </div>
+        <div class="column"></div>
+      </div>
+    </div>
+    
+    <div id="result"></div> <!---->
+    
+  </main>
+  <script src="./main.js"></script>
+</body>
+
+</html>
